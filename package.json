@@ -1,0 +1,34 @@
+{
+  "name": "squareshift-cart-service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.16",
+    "axios": "^1.3.1",
+    "cookie-parser": "^1.4.6",
+    "dot-env": "^0.0.1",
+    "express": "^4.18.2",
+    "helmet": "^6.0.1",
+    "http-status": "^1.6.2",
+    "joi": "^17.7.0",
+    "mongoose": "^6.9.0",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.1.2",
+    "typescript": "^4.9.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faizul123/Squareshift-cart-service.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/faizul123/Squareshift-cart-service/issues"
+  },
+  "homepage": "https://github.com/faizul123/Squareshift-cart-service#readme",
+  "description": ""
+}
