@@ -14,6 +14,7 @@ phases:
       - echo Build started on `date`
       - echo Compiling the Node.js code
       - cp .env.example .env
+      - cat .env
       - npm run start
   post_build:
     commands:
