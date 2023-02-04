@@ -54,7 +54,6 @@ export default class ShippingCostFinder {
             const weightMatched = this.applyComparision(weight, dimension.weight);
             if(!weightMatched) continue;
             const distanceMatched = this.applyComparision(distance, dimension.distance);
-            console.log(tarrif, { result: weightMatched && distanceMatched });
             if(weightMatched && distanceMatched) {
                 price = cost;
                 break;
