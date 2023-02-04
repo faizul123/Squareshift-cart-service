@@ -1,6 +1,6 @@
 import Joi from "joi";
 
-export type addItem = {
+export type addItemDto = {
     productIdList: number[],
 }
 

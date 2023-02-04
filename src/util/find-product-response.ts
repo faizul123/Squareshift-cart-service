@@ -10,5 +10,5 @@ export default function(response: AxiosResponse): Product {
     if(isProductNotFound){
         throw new ProductNotFound("Invalid Product id");
     }
-    return response.data as Product;
+    return response.data.response as Product;
 }

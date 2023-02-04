@@ -1,12 +1,14 @@
-import { Product } from "./product.types";
+import mongoose, { Model, Document } from 'mongoose';
 
-export type Cart = {
-    items: Product[];
-    total: number;
+export interface ICart {
+    userId: mongoose.Types.ObjectId;
+    productId: number;
 }
 
-export interface CartService {
-    addItem(item: Product);
-    delete(id: string);
-    getItems(id: string): Product[];
+export interface ICartDoc extends ICart, Document {
+
+}
+
+export interface ICartModel extends Model<ICartDoc> {
+
 }

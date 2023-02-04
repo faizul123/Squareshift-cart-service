@@ -1,0 +1,296 @@
+{
+    "tarrifs": [
+       {
+        "weight": {
+            "value": 2,
+            "operator": "<"
+        },
+        "distance": {
+            "value": 5,
+            "operator": "<"
+        },
+        "price": 12
+       },
+       {
+        "weight": {
+            "value": 2,
+            "operator": "<"
+        },
+        "distance": {
+            "min": 5,
+            "max": 20,
+            "operator": "range"
+        },
+        "price": 15
+       },
+       {
+        "weight": {
+            "value": 2,
+            "operator": "<"
+        },
+        "distance": {
+            "min": 20,
+            "max": 50,
+            "operator": "range"
+        },
+        "price": 20
+       },
+       {
+        "weight": {
+            "value": 2,
+            "operator": "<"
+        },
+        "distance": {
+            "min": 50,
+            "max": 500,
+            "operator": "range"
+        },
+        "price": 50
+       },
+       {
+        "weight": {
+            "value": 2,
+            "operator": "<"
+        },
+        "distance": {
+            "min": 500,
+            "max": 800,
+            "operator": "range"
+        },
+        "price": 50
+       },
+       {
+        "weight": {
+            "min": 2,
+            "operator": "<"
+        },
+        "distance": {
+            "value": 800,
+            "operator": ">"
+        },
+        "price": 50
+       },
+       {
+        "weight": {
+            "min": 2.01,
+            "max": 5,
+            "operator": "range"
+        },
+        "distance": {
+            "value": 5,
+            "operator": "<"
+        },
+        "price": 14
+       },
+       {
+        "weight": {
+            "min": 2.01,
+            "max": 5,
+            "operator": "range"
+        },
+        "distance": {
+            "min": 5,
+            "max": 20,
+            "operator": "range"
+        },
+        "price": 18
+       },
+       {
+        "weight": {
+            "min": 2.01,
+            "max": 5,
+            "operator": "range"
+        },
+        "distance": {
+            "min": 20,
+            "max": 50,
+            "operator": "range"
+        },
+        "price": 24
+       },
+       {
+        "weight": {
+            "min": 2.01,
+            "max": 5,
+            "operator": "range"
+        },
+        "distance": {
+            "min": 50,
+            "max": 500,
+            "operator": "range"
+        },
+        "price": 55
+       },
+       {
+        "weight": {
+            "min": 2.01,
+            "max": 5,
+            "operator": "range"
+        },
+        "distance": {
+            "min": 500,
+            "max": 800,
+            "operator": "range"
+        },
+        "price": 110
+       },
+       {
+        "weight": {
+            "min": 2.01,
+            "max": 5,
+            "operator": "range"
+        },
+        "distance": {
+            "value": 800,
+            "operator": ">"
+        },
+        "price": 250
+       },
+       {
+        "weight": {
+            "min": 5.01,
+            "max": 20,
+            "operator": "range"
+        },
+        "distance": {
+            "value": 5,
+            "operator": "<"
+        },
+        "price": 16
+       },
+       {
+        "weight": {
+            "min": 5.01,
+            "max": 20,
+            "operator": "range"
+        },
+        "distance": {
+            "min": 5,
+            "max": 20,
+            "operator": "range"
+        },
+        "price": 25
+       },
+       {
+        "weight": {
+            "min": 5.01,
+            "max": 20,
+            "operator": "range"
+        },
+        "distance": {
+            "min": 20,
+            "max": 50,
+            "operator": "range"
+        },
+        "price": 30
+       },
+       {
+        "weight": {
+            "min": 5.01,
+            "max": 20,
+            "operator": "range"
+        },
+        "distance": {
+            "min": 50,
+            "max": 500,
+            "operator": "range"
+        },
+        "price": 80
+       },
+       {
+        "weight": {
+            "min": 5.01,
+            "max": 20,
+            "operator": "range"
+        },
+        "distance": {
+            "min": 500,
+            "max": 800,
+            "operator": "<"
+        },
+        "price": 130
+       },
+       {
+        "weight": {
+            "min": 5.01,
+            "max": 20,
+            "operator": "range"
+        },
+        "distance": {
+            "value": 800,
+            "operator": ">"
+        },
+        "price": 270
+       },
+       {
+        "weight": {
+            "value": 20.1,
+            "operator": ">"
+        },
+        "distance": {
+            "value": 5,
+            "operator": "<"
+        },
+        "price": 21
+       },
+       {
+        "weight": {
+            "value": 20.1,
+            "operator": ">"
+        },
+        "distance": {
+            "min": 5,
+            "max": 20,
+            "operator": "range"
+        },
+        "price": 35
+       },
+       {
+        "weight": {
+            "value": 20.1,
+            "operator": ">"
+        },
+        "distance": {
+            "min": 20,
+            "max": 50,
+            "operator": "range"
+        },
+        "price": 50
+       },
+       {
+        "weight": {
+            "value": 20.1,
+            "operator": ">"
+        },
+        "distance": {
+            "min": 50,
+            "max": 500,
+            "operator": "range"
+        },
+        "price": 90
+       },
+       {
+        "weight": {
+            "value": 20.1,
+            "operator": ">"
+        },
+        "distance": {
+            "min": 500,
+            "max": 800,
+            "operator": "range"
+        },
+        "price": 150
+       },
+       {
+        "weight": {
+            "value": 20.1,
+            "operator": ">"
+        },
+        "distance": {
+            "value": 800,
+            "operator": ">"
+        },
+        "price": 300
+       }
+    ]
+}
