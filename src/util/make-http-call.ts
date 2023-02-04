@@ -1,14 +1,15 @@
+import config from '../config/init-config';
 import axios, { AxiosRequestConfig, CreateAxiosDefaults } from "axios";
 import resolveProductResponse from './find-product-response';
 import resolveDistanceAPIResponse from './find-distance-response';
 import { Product } from "../types/product.types";
 
-const config: CreateAxiosDefaults = {
-    baseURL: "http://15.206.157.204:8080",
+const axiosConfig: CreateAxiosDefaults = {
+    baseURL: config.productServiceHost,
     timeout: 10000, // 10s timeout
 };
 
-const instance = axios.create(config);
+const instance = axios.create(axiosConfig);
 
 const responseResolvers = {
     "resolveProductResponse": resolveProductResponse,
