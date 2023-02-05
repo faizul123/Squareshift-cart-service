@@ -9,13 +9,15 @@ phases:
     commands:
       - echo Installing source NPM dependencies...
       - npm ci
+      - echo install special library to support mongodb in memory
+      - apt install libssl1.1
   build:
     commands:
-      - echo Build started on `date`
+      - echo Build started
       - echo Compiling the Node.js code
       - cp .env.example .env
       - cat .env
       - npm run start
   post_build:
     commands:
-      - echo Build completed on `date`
+      - echo Build completed
