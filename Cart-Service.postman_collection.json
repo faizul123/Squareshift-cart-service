@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "ac1e71a5-9d30-46f7-9da4-5c402b24c1e7",
+		"name": "Cart Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21033605"
+	},
+	"item": [
+		{
+			"name": "Get Cart Items",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-app-userid",
+						"value": "63dddbc2701c6602b646ca09",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/cart/items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cart",
+						"items"
+					],
+					"query": [
+						{
+							"key": "x-app-userid",
+							"value": "63dddbc2701c6602b646ca09",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Item to Cart",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-app-userid",
+						"value": "63dddbc2701c6602b646ca09",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"productIdList\": [103,104,110]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/cart/item",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cart",
+						"item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Calculate Item's Checkout value",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-app-userid",
+						"value": "63dddbc2701c6602b646ca09",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/cart/checkout-value?pincode=465535",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cart",
+						"checkout-value"
+					],
+					"query": [
+						{
+							"key": "pincode",
+							"value": "465535"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove item from Cart",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-app-userid",
+						"value": "63dddbc2701c6602b646ca09",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/cart/102",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cart",
+						"102"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
